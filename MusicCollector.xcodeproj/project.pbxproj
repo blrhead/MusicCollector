@@ -13,6 +13,8 @@
 		521F092F1E730800005CE87A /* MusicCollector.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 521F092D1E730800005CE87A /* MusicCollector.xcdatamodeld */; };
 		521F09311E730800005CE87A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 521F09301E730800005CE87A /* Assets.xcassets */; };
 		521F09341E730800005CE87A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 521F09321E730800005CE87A /* LaunchScreen.storyboard */; };
+		521F093C1E730E40005CE87A /* Me.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 521F093B1E730E40005CE87A /* Me.jpg */; };
+		52C682FA1E73108900A24182 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C682F91E73108900A24182 /* MusicViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		521F09301E730800005CE87A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		521F09331E730800005CE87A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		521F09351E730800005CE87A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		521F093B1E730E40005CE87A /* Me.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Me.jpg; sourceTree = "<group>"; };
+		52C682F91E73108900A24182 /* MusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +60,10 @@
 		521F09251E730800005CE87A /* MusicCollector */ = {
 			isa = PBXGroup;
 			children = (
+				521F093B1E730E40005CE87A /* Me.jpg */,
 				521F09261E730800005CE87A /* AppDelegate.swift */,
 				521F09281E730800005CE87A /* ViewController.swift */,
+				52C682F91E73108900A24182 /* MusicViewController.swift */,
 				521F092A1E730800005CE87A /* Main.storyboard */,
 				521F09301E730800005CE87A /* Assets.xcassets */,
 				521F09321E730800005CE87A /* LaunchScreen.storyboard */,
@@ -127,6 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				521F09341E730800005CE87A /* LaunchScreen.storyboard in Resources */,
+				521F093C1E730E40005CE87A /* Me.jpg in Resources */,
 				521F09311E730800005CE87A /* Assets.xcassets in Resources */,
 				521F092C1E730800005CE87A /* Main.storyboard in Resources */,
 			);
@@ -139,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C682FA1E73108900A24182 /* MusicViewController.swift in Sources */,
 				521F09291E730800005CE87A /* ViewController.swift in Sources */,
 				521F092F1E730800005CE87A /* MusicCollector.xcdatamodeld in Sources */,
 				521F09271E730800005CE87A /* AppDelegate.swift in Sources */,
@@ -303,6 +311,7 @@
 				521F093A1E730800005CE87A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
