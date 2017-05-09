@@ -8,19 +8,34 @@
 
 import UIKit
 
-class MusicViewController: UIViewController {
+class MusicViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet var titleTextField: UITextField!
     
     @IBOutlet var musicImageView: UIImageView!
+    
+    var imagePicker = UIImagePickerController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        imagePicker.delegate = self
     }
 
     @IBAction func photosTapped(_ sender: AnyObject) {
+        
+        imagePicker.sourceType = .photoLibrary
+        
+        present(imagePicker, animated: true, completion: nil)
+        
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        let image = info [UIImagePickerControllerOriginalImage] as! UIImage
+        
+        musicImageView.image = image
+        
+        imagePicker.dismiss(animated: true, completion: nil)
     }
  
     @IBAction func cameraTapped(_ sender: AnyObject) {
