@@ -42,6 +42,17 @@ class MusicViewController: UIViewController, UIImagePickerControllerDelegate, UI
     }
     
     @IBAction func addTapped(_ sender: AnyObject) {
+        
+        let context = (UIApplication.shared.delegate as!
+        AppDelegate).persistentContainer.viewContext
+        
+        let music = Music(context: context)
+        music.title = titleTextField.text
+        music.image = UIImagePNGRepresentation(musicImageView.image!)! as NSData
+        
+        (UIApplication.shared.delegate as!
+            AppDelegate).saveContext()
+        
     }
 
 }
